@@ -38,7 +38,7 @@ link lab_1_x64.o /entry:main /subsystem:console /out:lab_1_x64.exe
 
 5. Линковка в DLL под Windows (x32 или x64). Пока не понял, почему требуется точка входа.
 ```
-link lab_1_x64.o /entry:main /subsystem:console /out:lab_1_x64.dll /dll
+link lab_1_x64.o /noentry /subsystem:console /out:lab_1_x64.dll /dll
 ```
 
 6. Линковка для возможности использования stdio:
